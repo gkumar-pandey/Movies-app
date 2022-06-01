@@ -20,14 +20,12 @@ const Header = () => {
             style={style.bannerimg}
           />
           <div className="card-body" style={style.cardBody}>
-            <h5 className="card-title">Card title</h5>
+            <h5 className="card-title" style={style.title} >Card title</h5>
             <p className="card-text">
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </p>
-            <a href="#" className="btn btn-primary">
-              Go somewhere
-            </a>
+             
           </div>
         </div>
       )}
@@ -45,7 +43,11 @@ const style = {
   cardBody: {
     position: "absolute",
     color:'white',
-    bottom:'10px'
+    left:'20px',
+    bottom:'30px'
+  },
+  title: {
+    fontSize: '2.4rem'
   },
   bannerimg: {
     margin: 0,
