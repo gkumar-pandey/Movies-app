@@ -1,6 +1,68 @@
-.movieposter:hover{
+.cardwidth {
+  width: 20rem;
+  position: relative;
+  height: 500px;
+  border: none;
+  margin: 1rem 0rem;
+}
+.movieposter {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movieposter:hover {
   /* border: 1px solid red;  */
   filter: brightness(0.5);
   transform: scale(1.01);
 }
- 
+.cardtitle {
+  position: absolute;
+  top: 4rem;
+  color: white;
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.btnwrapper {
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
+}
+.movielist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0rem 4rem;
+}
+
+@media (max-width: 768px) {
+  .cardwidth {
+    /* border: 1px solid red; */
+    width: 15rem;
+    height: 400px;
+    padding: 8px;
+    /* background-color: blue; */
+  }
+  
+  .movielist {
+    /* border: 1px solid red; */
+    padding: 0rem 0rem;
+  }
+}
+@media (max-width: 500px){
+  .movielist {
+    padding: 0rem;
+    border: 1px solid red;
+    justify-content: center;
+  }
+  .cardwidth {
+    width: 11rem;
+    padding: 0 3px;
+    border: 1px solid red;
+  }
+  .cardtitle{
+    font-size: 1.3rem;
+  }
+}
