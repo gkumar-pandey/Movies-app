@@ -1,18 +1,18 @@
 import React from "react";
-import { img_500 } from "./Config";
+import { img_original } from "./Config";
 import './MovieCardStyle.css'
 
 const MovieCard = (props) => {
   return (
 
     <div className="cardwidth"  >
-      <img src={img_500 + props.img} className="movieposter" alt="..."  />
+      <img src={img_original + props.img} className="movieposter" alt="..." />
 
       <h5 className="cardtitle"  >
         {props.title}
       </h5>
 
-      <div  className="btnwrapper">
+      <div className="btnwrapper">
         <a href="#" className="btn btn-primary">
           Add to Favourites
         </a>
@@ -26,6 +26,6 @@ const MovieCard = (props) => {
   );
 };
 
- 
+
 
 export default MovieCard;

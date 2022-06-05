@@ -4,18 +4,23 @@ import axios from "axios";
 import Pagenation from "./Pagenation";
 import "./MovieCardStyle.css";
 
+
 const Movie = () => {
+  const api_key = process.env.REACT_APP_API_KEY;
+   
   const [content, setcontent] = useState([]);
   const [page, setpage] = useState(1);
   const TrendingMoviesList = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/trending/all/day?api_key=5dd3b7469943c761e37c9378b1a51f26`
+      `https://api.themoviedb.org/3/trending/all/day?api_key=${api_key}&page=${page}`
     );
+    console.log(data)
     setcontent(data.results);
   };
   useEffect(() => {
     TrendingMoviesList();
   }, []);
+
   const change = ()=> {
     console.log('i am change')
   }

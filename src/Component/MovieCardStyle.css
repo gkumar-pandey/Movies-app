@@ -21,7 +21,7 @@
   top: 4rem;
   color: white;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 .btnwrapper {
@@ -54,15 +54,30 @@
 @media (max-width: 500px){
   .movielist {
     padding: 0rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: center;
   }
   .cardwidth {
-    width: 11rem;
-    padding: 0 3px;
-    border: 1px solid red;
+    width: 42%;
+    margin-left: 5px;
+    padding: 0 0px;
+    /* border: 1px solid red; */
+  }
+  .movieposter {
+    /* border: 1px solid red; */
   }
   .cardtitle{
     font-size: 1.3rem;
+    /* width: max-content; */
+    /* border: 1px solid red; */
+  }
+  .btnwrapper {
+    /* border: 1px solid red; */
+    width: 98%;
+     
+  }
+  .btnwrapper .btn {
+    /* width: 70%; */
+    font-size: 0.8rem;
   }
 }
