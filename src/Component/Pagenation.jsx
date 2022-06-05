@@ -1,39 +1,26 @@
 import React from "react";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
 
 function Pagenation(props) {
+   
+  const { paginate, totoalpage=100} = props;
+   
   return (
-    <>
-      <nav aria-label="Page navigation example">
-        <ul className="pagination">
-          <li className="page-item">
-            <a className="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              1
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              3
-            </a>
-          </li>
-          <li className="page-item" onClick={props.change}>
-            <a className="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <div style={style.pagination}>
+      <Stack>
+        <Pagination  color="primary" count={totoalpage} onChange={(e,value)=> paginate(value)} />
+      </Stack>
+    </div>
   );
 }
 
+const style ={
+  pagination: {
+    // border:'1px solid red',
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '0.6rem'
+  }
+}
 export default Pagenation;

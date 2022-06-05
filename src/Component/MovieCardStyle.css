@@ -12,7 +12,6 @@
 }
 
 .movieposter:hover {
-  /* border: 1px solid red;  */
   filter: brightness(0.5);
   transform: scale(1.01);
 }
@@ -39,45 +38,33 @@
 
 @media (max-width: 768px) {
   .cardwidth {
-    /* border: 1px solid red; */
     width: 15rem;
     height: 400px;
     padding: 8px;
-    /* background-color: blue; */
   }
-  
+
   .movielist {
-    /* border: 1px solid red; */
     padding: 0rem 0rem;
   }
 }
-@media (max-width: 500px){
+@media (max-width: 500px) {
   .movielist {
     padding: 0rem;
-    /* border: 1px solid red; */
     justify-content: center;
   }
   .cardwidth {
     width: 42%;
     margin-left: 5px;
     padding: 0 0px;
-    /* border: 1px solid red; */
   }
-  .movieposter {
-    /* border: 1px solid red; */
-  }
-  .cardtitle{
+
+  .cardtitle {
     font-size: 1.3rem;
-    /* width: max-content; */
-    /* border: 1px solid red; */
   }
   .btnwrapper {
-    /* border: 1px solid red; */
     width: 98%;
-     
   }
   .btnwrapper .btn {
-    /* width: 70%; */
     font-size: 0.8rem;
   }
 }

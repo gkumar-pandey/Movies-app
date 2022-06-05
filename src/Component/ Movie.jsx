@@ -14,15 +14,16 @@ const Movie = () => {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/trending/all/day?api_key=${api_key}&page=${page}`
     );
-    console.log(data)
+    
     setcontent(data.results);
   };
   useEffect(() => {
     TrendingMoviesList();
-  }, []);
+  }, [page]);
 
-  const change = ()=> {
-    console.log('i am change')
+  const changePage = (number)=> {
+    setpage(number);
+    window.scroll(0,0)
   }
   return (
      
@@ -35,12 +36,12 @@ const Movie = () => {
               <MovieCard
                 img={item.poster_path}
                 title={item.original_title || item.name}
-                key={item.idx}
+                key={item.id}
               />
             );
           })}
         </div>
-        <Pagenation change={change}/>
+        <Pagenation paginate={changePage}  />
       </>
      
   );
@@ -51,6 +52,7 @@ let style = {
     textAlign: "center",
     padding: "1rem",
   },
+  
   
 };
 export default Movie;
