@@ -1,0 +1,54 @@
+.navbar {
+    height: 6vh;
+    width: 100%;
+    background-color: #02576C;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 1.5rem;
+    justify-content: space-between;
+}
+.logowrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 11%;
+}
+.navlogo{
+    font-size: 1.8rem;
+}
+favMovie{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    border: 1px solid red;
+}
+.searchbar {
+    width: 40%;
+    border: none;
+    flex: end;
+
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+   .navbar{
+    padding: 10px 4px; 
+   } 
+   .navlogo{
+       font-size: 1.4rem;
+   }
+   .favMovie {
+       /* font-size: 1rem; */
+       margin-left: 5px;
+   }
+   .searchbar {
+       width: 50%;
+       /* height: 30px; */
+   }
+
+}
