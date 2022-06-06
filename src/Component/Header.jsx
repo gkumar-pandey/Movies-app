@@ -50,7 +50,7 @@ const Header = () => {
           {crouselMovies.map((movie, idx) => {
             return (
               <SwiperSlide key={movie.id}>
-                <div style={style.swipercontainer} >
+                <div style={style.swipercontainer}>
                   <div style={style.title}>
                     <div style={style.titleOverviewContainer}>
                       <h2 style={style.movieTitle}>
@@ -123,7 +123,6 @@ const style = {
   },
   img: {
     width: "100%",
-    // zIndex: "-100",
     height: "80vh",
   },
 };
