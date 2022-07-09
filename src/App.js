@@ -1,14 +1,13 @@
 import './App.css';
 import Navbar from './Component/Navbar';
-import Header from './Component/Header';
-import Movie from './Component/ Movie';
+ 
 import "swiper/css/bundle";
+import HomePage from './Pages/HomePage';
 function App() {
   return (
     <div>
       <Navbar />
-      <Header />
-      <Movie />
+      <HomePage/>
     </div>
   );
 }
